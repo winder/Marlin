@@ -932,7 +932,15 @@
 // TODO: Tweak these
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
 // copied from ancient configuration...
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {1.003*0.98995948*1.1465*2*78.7402,1.003*0.98995948*1.1465*2*78.7402, 1511.57298,106.707}
+// x/y
+//   ancient config - 179.2746652
+//   maxzprint.com.au calculator - 175.1505199781062
+// z - 1511.57298 (this is about perfect, no need to change)
+// e - 106.707 (not sure about this one or even how to test)
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { \
+    175.1505199781062, 175.1505199781062, \
+    1511.57298, \
+    106.707}
 
 
 /**
