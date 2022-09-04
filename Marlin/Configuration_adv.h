@@ -1991,7 +1991,7 @@
  *
  * See https://marlinfw.org/docs/features/lin_advance.html for full instructions.
  */
-#define LIN_ADVANCE
+//#define LIN_ADVANCE
 #if ENABLED(LIN_ADVANCE)
   //#define EXTRA_LIN_ADVANCE_K // Enable for second linear advance constants
   #define LIN_ADVANCE_K 0.0    // Unit: mm compression per 1mm/s extruder speed
@@ -2800,7 +2800,7 @@
     #define E0_MICROSTEPS    16
     #define E0_RSENSE         0.11
     #define E0_CHAIN_POS     -1
-    //#define E0_INTERPOLATE true
+    #define E0_INTERPOLATE false
     //#define E0_HOLD_MULTIPLIER 0.5
   #endif
 
@@ -2809,7 +2809,7 @@
     #define E1_MICROSTEPS   E0_MICROSTEPS
     #define E1_RSENSE         0.11
     #define E1_CHAIN_POS     -1
-    //#define E1_INTERPOLATE true
+    #define E1_INTERPOLATE false
     //#define E1_HOLD_MULTIPLIER 0.5
   #endif
 
@@ -2818,7 +2818,7 @@
     #define E2_MICROSTEPS   E0_MICROSTEPS
     #define E2_RSENSE         0.11
     #define E2_CHAIN_POS     -1
-    //#define E2_INTERPOLATE true
+    #define E2_INTERPOLATE false
     //#define E2_HOLD_MULTIPLIER 0.5
   #endif
 
@@ -2827,7 +2827,7 @@
     #define E3_MICROSTEPS   E0_MICROSTEPS
     #define E3_RSENSE         0.11
     #define E3_CHAIN_POS     -1
-    //#define E3_INTERPOLATE true
+    #define E3_INTERPOLATE false
     //#define E3_HOLD_MULTIPLIER 0.5
   #endif
 
@@ -2951,7 +2951,7 @@
   #define STEALTHCHOP_I
   #define STEALTHCHOP_J
   #define STEALTHCHOP_K
-  #define STEALTHCHOP_E
+  //#define STEALTHCHOP_E
 
   /**
    * Optimize spreadCycle chopper parameters by using predefined parameter sets
@@ -2968,7 +2968,7 @@
    * Define your own with:
    * { <off_time[1..15]>, <hysteresis_end[-3..12]>, hysteresis_start[1..8] }
    */
-  #define CHOPPER_TIMING CHOPPER_DEFAULT_24V        // All axes (override below)
+  #define CHOPPER_TIMING CHOPPER_DEFAULT_12V        // All axes (override below)
   //#define CHOPPER_TIMING_X  CHOPPER_TIMING        // For X Axes (override below)
   //#define CHOPPER_TIMING_X2 CHOPPER_TIMING_X
   //#define CHOPPER_TIMING_Y  CHOPPER_TIMING        // For Y Axes (override below)
