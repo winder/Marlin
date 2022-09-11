@@ -488,7 +488,7 @@
  *   999 : Dummy Table that ALWAYS reads 100°C or the temperature defined below.
  *
  */
-#define TEMP_SENSOR_0 5
+#define TEMP_SENSOR_0 1047
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
@@ -936,11 +936,12 @@
 //   ancient config - 179.2746652
 //   maxzprint.com.au calculator - 175.1505199781062
 // z - 1511.57298 (this is about perfect, no need to change)
-// e - 106.707 (not sure about this one or even how to test)
+// e - 106.707 (not sure about this one or even how to test) - it is good for the jhead
+// e - 932 biqu h2 documentation
 #define DEFAULT_AXIS_STEPS_PER_UNIT   { \
     175.1505199781062, 175.1505199781062, \
     1511.57298, \
-    106.707}
+    932}
 
 
 /**
